@@ -1,4 +1,4 @@
-##Codebook for the Getting and Cleaning Data Course Project
+# Codebook for the Getting and Cleaning Data Course Project
 
 Raw Data
 
