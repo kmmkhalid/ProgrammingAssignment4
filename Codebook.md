@@ -1,6 +1,6 @@
 # Codebook for the Getting and Cleaning Data Course Project
 
-Raw Data
+## Raw Data
 
 This project uses as input the Human Activity Recognition Using Smartphones Data Set v1.0 [1] which is described in http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones and can be downloaded from
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
@@ -65,39 +65,80 @@ Along with other files, the following files relevant to this project were contai
 - 'test/y_test.txt': contains the activity labels (range is from 1-6) corresponding to each of the 2947 observations used for testing
 - 'train/subject_train.txt' and 'test/subject_test.txt': Each row identifies the subject who performed the activity observation; range is from 1 to 30. 
 
-Tidy Data Set
+## Tidy Data Set
 
 The Tidy Data set produced for this project is a subsetted and summarized version of the combined train and test data sets from the raw data. Specifically, the tidy data set has the following features:
 
 1 Only the variables containing measurements on the mean and standard deviation were used. Thus, along with the SubjectID and the ActivityID, the data set has a total of 68 variables. Each column of the data set corresponds to one variable, named as follows: 
 
-- "SubjectID"		- "ActivityID"		- "tBodyAcc-mean()-X"          
+- "SubjectID"		
+- "ActivityID"		
+- "tBodyAcc-mean()-X"          
 - "tBodyAcc-mean()-Y"
 - "tBodyAcc-mean()-Z"           
 - "tGravityAcc-mean()-X"       
 - "tGravityAcc-mean()-Y"        
 - "tGravityAcc-mean()-Z"        
 - "tBodyAccJerk-mean()-X"      
-- "tBodyAccJerk-mean()-Y"       "tBodyAccJerk-mean()-Z"       "tBodyGyro-mean()-X"         
-[13] "tBodyGyro-mean()-Y"          "tBodyGyro-mean()-Z"          "tBodyGyroJerk-mean()-X"     
-[16] "tBodyGyroJerk-mean()-Y"      "tBodyGyroJerk-mean()-Z"      "tBodyAccMag-mean()"         
-[19] "tGravityAccMag-mean()"       "tBodyAccJerkMag-mean()"      "tBodyGyroMag-mean()"        
-[22] "tBodyGyroJerkMag-mean()"     "fBodyAcc-mean()-X"           "fBodyAcc-mean()-Y"          
-[25] "fBodyAcc-mean()-Z"           "fBodyAccJerk-mean()-X"       "fBodyAccJerk-mean()-Y"      
-[28] "fBodyAccJerk-mean()-Z"       "fBodyGyro-mean()-X"          "fBodyGyro-mean()-Y"         
-[31] "fBodyGyro-mean()-Z"          "fBodyAccMag-mean()"          "fBodyBodyAccJerkMag-mean()" 
-[34] "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroJerkMag-mean()" "tBodyAcc-std()-X"           
-[37] "tBodyAcc-std()-Y"            "tBodyAcc-std()-Z"            "tGravityAcc-std()-X"        
-[40] "tGravityAcc-std()-Y"         "tGravityAcc-std()-Z"         "tBodyAccJerk-std()-X"       
-[43] "tBodyAccJerk-std()-Y"        "tBodyAccJerk-std()-Z"        "tBodyGyro-std()-X"          
-[46] "tBodyGyro-std()-Y"           "tBodyGyro-std()-Z"           "tBodyGyroJerk-std()-X"      
-[49] "tBodyGyroJerk-std()-Y"       "tBodyGyroJerk-std()-Z"       "tBodyAccMag-std()"          
-[52] "tGravityAccMag-std()"        "tBodyAccJerkMag-std()"       "tBodyGyroMag-std()"         
-[55] "tBodyGyroJerkMag-std()"      "fBodyAcc-std()-X"            "fBodyAcc-std()-Y"           
-[58] "fBodyAcc-std()-Z"            "fBodyAccJerk-std()-X"        "fBodyAccJerk-std()-Y"       
-[61] "fBodyAccJerk-std()-Z"        "fBodyGyro-std()-X"           "fBodyGyro-std()-Y"          
-[64] "fBodyGyro-std()-Z"           "fBodyAccMag-std()"           "fBodyBodyAccJerkMag-std()"  
-[67] "fBodyBodyGyroMag-std()"      "fBodyBodyGyroJerkMag-std()" 
+- "tBodyAccJerk-mean()-Y"       
+- "tBodyAccJerk-mean()-Z"       
+- "tBodyGyro-mean()-X"         
+- "tBodyGyro-mean()-Y"          
+- "tBodyGyro-mean()-Z"          
+- "tBodyGyroJerk-mean()-X"     
+- "tBodyGyroJerk-mean()-Y"      
+- "tBodyGyroJerk-mean()-Z"      
+- "tBodyAccMag-mean()"         
+- "tGravityAccMag-mean()"       
+- "tBodyAccJerkMag-mean()"      
+- "tBodyGyroMag-mean()"        
+- "tBodyGyroJerkMag-mean()"     
+- "fBodyAcc-mean()-X"           
+- "fBodyAcc-mean()-Y"          
+- "fBodyAcc-mean()-Z"           
+- "fBodyAccJerk-mean()-X"       
+- "fBodyAccJerk-mean()-Y"      
+- "fBodyAccJerk-mean()-Z"       
+- "fBodyGyro-mean()-X"          
+- "fBodyGyro-mean()-Y"         
+- "fBodyGyro-mean()-Z"          
+- "fBodyAccMag-mean()"          
+- "fBodyBodyAccJerkMag-mean()" 
+- "fBodyBodyGyroMag-mean()"     
+- "fBodyBodyGyroJerkMag-mean()" 
+- "tBodyAcc-std()-X"           
+- "tBodyAcc-std()-Y"            
+- "tBodyAcc-std()-Z"            
+- "tGravityAcc-std()-X"        
+- "tGravityAcc-std()-Y"         
+- "tGravityAcc-std()-Z"         
+- "tBodyAccJerk-std()-X"       
+- "tBodyAccJerk-std()-Y"        
+- "tBodyAccJerk-std()-Z"        
+- "tBodyGyro-std()-X"          
+- "tBodyGyro-std()-Y"           
+- "tBodyGyro-std()-Z"           
+- "tBodyGyroJerk-std()-X"      
+- "tBodyGyroJerk-std()-Y"       
+- "tBodyGyroJerk-std()-Z"       
+- "tBodyAccMag-std()"          
+- "tGravityAccMag-std()"        
+- "tBodyAccJerkMag-std()"       
+- "tBodyGyroMag-std()"         
+- "tBodyGyroJerkMag-std()"      
+- "fBodyAcc-std()-X"            
+- "fBodyAcc-std()-Y"           
+- "fBodyAcc-std()-Z"            
+- "fBodyAccJerk-std()-X"        
+- "fBodyAccJerk-std()-Y"       
+- "fBodyAccJerk-std()-Z"        
+- "fBodyGyro-std()-X"           
+- "fBodyGyro-std()-Y"          
+- "fBodyGyro-std()-Z"           
+- "fBodyAccMag-std()"           
+- "fBodyBodyAccJerkMag-std()"  
+- "fBodyBodyGyroMag-std()"      
+- "fBodyBodyGyroJerkMag-std()" 
 
 The SubjectID identifies the subject who performed the activity observation. There are a total of 30 subjects.
 The ActivityID identifies the activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) performed by the subject during which the measurements were taken.
@@ -105,18 +146,18 @@ The detailed description of variables 3-68 can be found in http://archive.ics.uc
 
 2 Each row of the tidy data set corresponds to the column mean of each of the aforementioned variables for a particular subject doing a particular activity. With 30 subjects and 6 possible activity classes, the data frame consists of a total of 180 observations; grouped by Subject ID.
 
-R Script for producing the Tidy Data Set
+## R Script for producing the Tidy Data Set
 
 The process for transforming the Raw Data into the Tidy Data Set as required is described in the following steps and contained in the R script run_analysis.R:
 
-1 DATA PREPARATION 
+### 1 DATA PREPARATION 
 	1.1 Download the raw data set
 	1.2 Unzip dataSet to ./data directory
 	1.3 Load the data files
 		1.3.1 Load the Features file
 		1.3.2 Load the Train data
 		1.3.3 Load the Test data
-2 DATA PROCESSING 
+### 2 DATA PROCESSING 
 	2.1 Merge the training and the test sets to create one data set.
 	2.2 Extract only the measurements on the mean and standard deviation for each variable.
 	2.3 Use descriptive activity names to name the activities in the data set
