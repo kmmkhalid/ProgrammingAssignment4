@@ -21,6 +21,8 @@ run_analysis.R contains the code used to perform the analysis steps described be
 (4) Appropriately label the data set with descriptive variable names.
 (5) From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+The run_analysis.R also provides the code to download the raw data set prior to analysis and processing.
+
 codebook.md describes the data sets, variables, and processes done on the raw data.
 
 tidydatase.txt contains the cleaned up data set as required.
