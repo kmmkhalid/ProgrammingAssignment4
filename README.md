@@ -13,7 +13,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The files in this repository include the following:
 
-run_analysis.R contains the code used to perform the analysis steps described below: 
+**run_analysis.R** contains the code used to perform the analysis steps described below: 
 
 (1) Merge the training and the test sets to create one data set.
 (2) Extract only the measurements on the mean and standard deviation for each measurement.
@@ -23,7 +23,7 @@ run_analysis.R contains the code used to perform the analysis steps described be
 
 The run_analysis.R also provides the code to download the raw data set prior to analysis and processing.
 
-codebook.md describes the data sets, variables, and processes done on the raw data.
+**codebook.md** describes the data sets, variables, and processes done on the raw data.
 
-tidydatase.txt contains the cleaned up data set as required.
+**tidydatase.txt** contains the cleaned up data set as required.
 
